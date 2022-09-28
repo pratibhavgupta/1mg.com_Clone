@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      #BA_slider_parent {
+        border: 1px solid;
+        width: 85%;
+        height: 32rem;
+        margin: auto;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 40% 55%;
+        gap: 5%;
+      }
+      #BA_slider_parent > div {
+        border: 1px solid;
+      }
+      .slide_bar1 {
+        border: 1px solid red;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        /* border-color: transparent; */
+        position: relative;
+      }
+
+      #sidebar1IMG {
+        display: block;
+        width: 100%;
+        height: 90%;
+      }
+      #BA_slider_child2 {
+        display: grid;
+        grid-template-rows: auto;
+      }
+      #BA_slider_child2 > div {
+        border: 0.1rem solid red;
+      }
+      #BA_slider_child2 > div:nth-child(1) {
+        color: #212121;
+        font-size: 250%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      #BA_slider_child2 > div:nth-child(2) {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.6rem;
+      }
+      #BA_small_icons_parent {
+        display: flex;
+        justify-content: space-around;
+      }
+      #BA_small_icons_parent > div {
+        border: 0.1rem solid red;
+        width: 10%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:100%;
+      }
+      #BA_small_icons_parent > div>span{
+        display: block;
+        margin-top: 1rem;
+      }
+      #BA_small_icons_parent > div > img {
+        display: block;
+        margin: auto;
+        width: 100%;
+      }
+      #View_Popular_Packages_div {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      #View_Popular_Packages {
+        width: 35%;
+        height: 90%;
+        background-color: #ff6f61;
+        font-weight: bold;
+        padding: 1.3rem;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      @media (max-width: 998px) {
+        html {
+          font-size: 50%;
+        }
+      }
+      @media (max-width: 760px) {
+        html {
+          font-size: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="BA_slider_parent">
+      <div id="BA_slider_child1">
+        <div class="slide_bar1">
+          <img
+            id="sidebar1IMG"
+            src="https://onemg.gumlet.io/assets/2e61b010-39d7-11ed-81ac-0a2a0bfbf692.jpg?format=auto"
+          />
+        </div>
+      </div>
+      <div id="BA_slider_child2">
+        <div>Lab Test From The Comfort Of Your Home</div>
+        <div>50,00,000+ lab tests booked | 20,00,000+ satisfied customers</div>
+        <div id="BA_small_icons_parent">
+          <div>
+            <img
+              src="https://onemg.gumlet.io/Safe_38x38_labs_oe5ieq.png?format=auto"
+              alt=""
+            />
+            <span>100% Safe & Hygienic</span>
+          </div>
+          <div>
+            <img
+              src="https://onemg.gumlet.io/new_color_images/Lab_delivery_2x.png?format=auto"
+              alt=""
+            />
+            <span>Home Sample Pick Up</span>
+          </div>
+          <div>
+            <img
+              src="https://onemg.gumlet.io/new_color_images/Lab_online_report_2x.png?format=auto"
+              alt=""
+            />
+            <span>View Reports Online</span>
+          </div>
+          <div>
+            <img
+              src="https://onemg.gumlet.io/new_color_images/Lab_doctor_2x.png?format=auto"
+              alt=""
+            />
+            <span>Free Doctor Consultation</span>
+          </div>
+          <div>
+            <img
+              src="https://onemg.gumlet.io/new_color_images/Lab_offer_2x.png?format=auto"
+              alt=""
+            />
+            <span>Best Prices Guaranteed</span>
+          </div>
+        </div>
+        <div id="View_Popular_Packages_div">
+          <button id="View_Popular_Packages">View Popular Packages</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let All_images_link2 = [
+    'https://onemg.gumlet.io/assets/2e61b010-39d7-11ed-81ac-0a2a0bfbf692.jpg?format=auto',
+    'https://onemg.gumlet.io/assets/a56696d0-39d7-11ed-ad6f-0a93c9beafce.jpg?format=auto',
+    'https://onemg.gumlet.io/assets/d9fa7552-147e-11ed-bf47-0a7644f785c6.png?format=auto',
+    'https://onemg.gumlet.io/assets/e406cd06-39d7-11ed-8d85-0acb2b1fe408.jpg?format=auto',
+    'https://onemg.gumlet.io/assets/8caf7042-d511-11ec-a81c-0a1e05c4583e.png?format=auto',
+    'https://onemg.gumlet.io/assets/d798e690-3a62-11ed-988f-025c288f92b2.png?format=auto',
+  ];
+
+  let imageList4 = document.getElementById('sidebar1IMG');
+  let slide_bar1 = document.getElementsByClassName('slide_bar1');
+  let image_position4 = 0;
+
+  setInterval(function () {
+    image_position4++;
+    if (image_position4 === All_images_link2.length) {
+      image_position4 = 0;
+    }
+    imageList4.src = All_images_link2[image_position4];
+  }, 3000);
+</script>
