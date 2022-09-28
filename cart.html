@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+    <div id="a_main">
+        <div id="a_prod_detail">
+
+            <div id="a_membership">
+                <h3><i class="fa-regular fa-circle-check"></i>Membership added to cart</h3>
+                <p>Save an additional 7% on prescription medicine & earn 5% NeuCoins on other health products. Get same day, next day with Rapid and free standard delivery.</p>
+                <div id="a_plan">
+                    <div id="a_care">
+                        <img src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" alt="">
+                        <span id="a_off"><i class="fa-solid fa-indian-rupee-sign"></i>565</span>
+                        <span><i class="fa-solid fa-indian-rupee-sign"></i>165</span>
+                    </div>
+                    <p>3 months membership</p>
+                    <div id="a_care_btn">
+                        <p>See all benefits <i class="fa-solid fa-circle-chevron-right"></i></p>
+                        <button>Remove</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div>
+                <!-- quantity inc dec -->
+                <div class="col-6">
+                   
+                    <div class="row">
+                       
+                        <div class="col-4 d-flex justify-content-end price_money">
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i><span id="itemval">0.00 </span></h3>
+                        </div>
+                    </div>
+                    <ul class="pagination justify-content-end set_quantity">
+                        <div class="col-8 d-flex justify-content-between remove_wish">
+                            <p><i class="fas fa-trash-alt"></i> REMOVE</p>
+                        </div>
+                        <li class="page-item">
+                            <button class="page-link " onclick="decreaseNumber('textbox','itemval')">
+                                <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox">
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i
+                                    class="fas fa-plus"></i></button>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+        <div id="a_pay_detail">
+
+            <div class="">
+
+                <!-- discount code part -->
+                <div class="coupon">
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="d-flex justify-content-between" data-toggle="collapse" href="#"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Add a discount code (optional)
+
+                                <span><i class="fas fa-chevron-down pt-1"></i></span>
+                            </a>
+                            <p>Use this code (Azam) and get Rs. 10 Discount</p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="mt-3">
+                                    <input type="text" name="" id="discount_code1" class="form-control font-weight-bold"
+                                        placeholder="Enter the discount code">
+                                    <small id="error_trw" class="text-dark mt-3">code is Azam</small>
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="right_side p-3 shadow bg-white">
+                    <h2 class="product_name mb-5">The Total Amount Of</h2>
+                    <div class="price_indiv d-flex justify-content-between">
+                        <p>Product amount</p>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i><span id="product_total_amt">0.00</span></p>
+                    </div>
+                    <div class="price_indiv d-flex justify-content-between">
+                        <p>Delivery charge</p>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i><span id="product_total_amt">0.00</span></p>
+                    </div>
+                    <div class="price_indiv d-flex justify-content-between">
+                        <p>Total saving</p>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i><span id="shipping_charge">10.0</span></p>
+                    </div>
+                    <hr />
+                    <div class="total-amt d-flex justify-content-between font-weight-bold">
+                        <p>To be paid</p>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i><span id="total_cart_amt">0.00</span></p>
+                    </div>
+                    <button id="checkout" class="btn btn-primary text-uppercase">Checkout</button>
+                </div>
+
+
+
+                <!-- discount code ends -->
+                <div class="mt-3 shadow p-3 bg-white">
+                    <div class="pt-4">
+                        <h5 class="mb-4">Expected delivery date</h5>
+                        <p>Tomorrow</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cart 111111 -->
+
+            <!-- <div id="a_coupon"></div>
+            <div id="a_check_health"></div>
+            <div id="a_totalbill"></div>
+            <div id="a_checkout"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./cart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
