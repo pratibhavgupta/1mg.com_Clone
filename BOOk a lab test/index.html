@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      #BA_Book_A_Test {
+        /* border: 0.1rem solid black; */
+        width: 80%;
+        height:auto;
+        margin: auto;
+        margin-top: 1.5rem;
+      }
+      #BA_Book_A_Test > div:nth-child(1) {
+        width: 100%;
+        /* border: 0.3rem solid red; */
+        color: #212121;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+      }
+      #belowBool_LAB{
+        width: 100%;
+        border: 0.1rem solid #ebebeb ;
+        margin: auto;
+        height: 67%;
+      }
+      #BA_Book_A_Test_2parent {
+        /* border: 0.3rem solid black; */
+        width: auto;
+        height: auto;
+        display: flex;
+        /* justify-content:space-evenly; */
+        align-items: center;
+        color: #212121;
+        font-size: .8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1rem;
+           }
+      #BA_Book_A_Test_2parent > div {
+        /* border: 0.1rem solid red; */
+        width: 50%;       
+        height: auto;
+        /* background-color: aqua; */
+        
+      }
+      
+      .HEalth_test_Near_you > div {
+        /* border: 0.2rem solid green; */
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        display: flex;
+        justify-content:space-between; 
+      }
+    
+      .svgParent {
+        display: flex;
+        width: 100%;
+        height: auto;
+     font-size: 1.1rem;
+       
+      }
+      .svgParent>div{
+        /* border: .3rem solid black; */
+        width: 50%;
+        height: auto;        
+      justify-content:space-between;
+      }
+      .svg{
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+      }
+        .forGap{
+            display: grid;
+            gap: .2rem;
+        }
+      #Find_your_test{
+        border: 0.1rem solid #ebebeb ;
+        width: 15%;      
+        font-size: 1rem;      
+        color: #ff6359  ;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 1.8rem;
+        display: flex;
+       text-align: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+    
+     .gapDIV{
+        width: 100%;
+        height: 3rem;
+        margin: auto;
+     }
+
+     #Careplane{
+        /* border: .1rem solid; */
+        width:80% ;
+        margin: auto;
+        height: auto;
+        margin-top: auto;
+     }
+     #Careplane>img{
+        width: 100%;
+      
+     }
+     @media all and (min-width: 401px) and (max-width: 800px) {
+        html {
+          font-size: 45%;
+        }
+      }
+      @media all and (min-width: 100px) and (max-width: 400px)  {
+        html {
+          font-size: 25%;
+        }
+      }
+      /* @media (max-width: 460px) {
+        html {
+          font-size: 10%;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="BA_Book_A_Test">
+      <div>
+        <h1>Book A Lab Test</h1>
+      </div>
+     <div id="belowBool_LAB">
+        <div id="BA_Book_A_Test_2parent">
+
+            <div class="HEalth_test_Near_you">
+              <div><h1>HEALTH TEST AT YOUR HOME</h1></div>
+    
+              <div class="svgParent">
+    
+                <div class="forGap">
+                   <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                  
+                   <div>COVID-RTPCR</div></div>
+                    &nbsp;
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>Dengue NS1 Antigen</div></div>
+                    &nbsp;
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>Diabetes Screening</div></div>
+                  </div>
+               
+    
+                  <div class="forGap">
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>LFT + KFT
+                    </div></div>
+                     &nbsp;
+                     <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                     <div>Thyroid profile Total</div></div>
+                     &nbsp;
+                     <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                     <div>Glucose - Postprandial</div></div>
+                  </div>
+                  
+    
+              </div>
+    
+            </div>
+    
+            <div class="HEalth_test_Near_you">
+              <div><h1>VISIT A LAB NEAR YOU</h1></div>
+              <div class="svgParent">
+    
+                <div class="forGap">
+                   <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                   <div>COVID-RTPCR</div></div>
+                    &nbsp;
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>Dengue NS1 Antigen</div></div>
+                    &nbsp;
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>Diabetes Screening</div></div>
+                  </div>
+               
+    
+                  <div class="forGap">
+                    <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                    <div>LFT + KFT
+                    </div></div>
+                     &nbsp;
+                     <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                     <div>Thyroid profile Total</div></div>
+                     &nbsp;
+                     <div class="svg"> <div ><svg  width="18" height="18" ><path d="M17.5 9.017h.01-.01zM8.999 1C4.595 1 1.008 4.579 1 8.985.991 13.396 4.573 16.993 8.984 17H9c4.403 0 7.991-3.578 8-7.984.008-4.411-3.574-8.007-7.985-8.016h-.016zM9 18h-.018C4.02 17.991-.01 13.946 0 8.983.009 4.026 4.045 0 8.999 0h.018C13.979.01 18.01 4.056 18 9.018 17.989 13.974 13.954 18 9 18z"></path><path d="M9.527 8.639V4.946a.446.446 0 0 0-.892 0v3.692l-3.688-.004a.446.446 0 0 0 0 .892l3.688.003v3.686a.446.446 0 0 0 .892 0V9.53l3.752.004a.446.446 0 0 0 0-.892L9.527 8.64z"></path></svg></div>
+                     <div>Glucose - Postprandial</div></div>
+                  </div>             
+    
+              </div>
+            </div>
+    
+          </div>
+          <div id="Find_your_test">
+            <div"><span ><svg  width="12" height="12" ><path  fill="#FF6F61" fill-rule="evenodd" d="M8.308 5.077c0 1.781-1.45 3.23-3.231 3.23a3.235 3.235 0 0 1-3.23-3.23c0-1.781 1.449-3.23 3.23-3.23s3.23 1.449 3.23 3.23zm3.425 5.35L9.26 7.955A5.075 5.075 0 0 0 5.077 0 5.075 5.075 0 0 0 0 5.077 5.075 5.075 0 0 0 7.954 9.26l2.474 2.466a.905.905 0 0 0 .649.274.93.93 0 0 0 .923-.923.929.929 0 0 0-.267-.65z"></path></svg>&nbsp;<span >FIND YOUR TESTS</span></span></div>
+          </div>
+     </div>
+    </div>
+<div class="gapDIV"></div>
+
+    <div id="Careplane">
+<img src="https://onemg.gumlet.io/image/upload/buna7nmyhe1asoqcoc2i.png" alt="">
+    </div>
+  </body>
+</html>
