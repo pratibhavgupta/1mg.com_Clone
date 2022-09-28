@@ -1,0 +1,40 @@
+
+#head{
+    width: 100%;
+    display: flex;
+}
+#Hslider{
+    width: 65%;
+    height: 27vh;
+    /* margin: 30px auto; */
+    position: relative;
+    /* display: flex; */
+    border: 1px solid red;
+    overflow: hidden;
+}
+#slider-1{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider-1 img{
+    width: 100%;
+}
+
+#Indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+#Indicators span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+#HBoxLeft{
+    width: 35%;
+    border: 1 px solid black;
+}
