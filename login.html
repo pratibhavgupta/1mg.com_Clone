@@ -10,6 +10,13 @@
 </head>
 <body>
     <div class="container">
+
+        <div class="box">
+            <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+            <h2>Make Healthcare Simpler</h2>
+            <p>Get medicine information, order medicines, book lab tests and consult doctors online from the comfort of your home.</p>
+        </div>
+
         <div class="center">
             <!-- <h1>Login</h1> -->
             <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="">
@@ -29,7 +36,7 @@
                 <input name="submit" type="submit" value="Sign in">
                 <div class="signup_link">
                     New on 1mg ? 
-                 <a href="./signup.html">Join</a> to unlock the best of Healthcare.
+                 <a href="signUP.html">Join</a> to unlock the best of Healthcare.
                  <p>By logging in, you agree to our Terms and Conditions & Privacy Policy</p>
                  <a href="">Need Help? Get in Touch</a>
             </div>
@@ -40,6 +47,20 @@
 </body>
 </html>
 
+<script>
+
+
+    let form = document.querySelector("form");
+    form.addEventListener("submit", myForm);
+  
+    function myForm(event){
+      event.preventDefault();
+  
+      alert("Login Successful ")
+      window.location.href = "/index.html"
+    }
+  
+</script>
 
 
 
