@@ -85,5 +85,33 @@ div {
 #second h4:hover{
   color: #ff6f61;
 }
+#third{
+  width:100%;
+  display:grid;
+  grid-template-columns: 60% 22% 9%;
+  height:45px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#third div{
+  display: flex;
+  align-items: center;
+}
+#third img{
+  width:20px;
+}
+#third input{
+  width:93%;
+  height:35px;
+}
+#quick{
+  padding: 10px 15px 10px 15px;
+}
+#third p{
+  font-size: 13px;
+}
+#third button{
+  padding: 7px;
+}
 
 
