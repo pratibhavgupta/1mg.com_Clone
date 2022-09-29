@@ -76,7 +76,11 @@ body{
 #a_care_btn>p ,button:hover{
     cursor: pointer;
 }
-
+#a_remove{
+  border: none;
+  border-radius: 20px;
+  padding: 0px 15px 0px 15px
+}
 
 
 

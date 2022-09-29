@@ -1,0 +1,61 @@
+#a_address{
+    display: grid;
+    gap: 10px;
+    padding: 20px 20px 30px;
+    width: 50%;
+    /* margin: 50px 0px 0px 250px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#a_address input{
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid grey;
+   
+}
+#a_radio{
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#houseno{
+    height: 50px;
+    
+
+}
+#a_address #submit{
+    background-color: #ff6f61;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+#a_down{
+    width: 35%;
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    margin: 50px 0px 0px 225px;
+    color: light black;
+
+}
+#a_down>#disc{
+    width: 100%;
+}
+#show_add{
+    display: grid;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 40%;
+    padding: 20px;
+}
+#main_address{
+   display: flex;
+   gap: 100px;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+
+}
