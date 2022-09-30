@@ -1,0 +1,13 @@
+div{
+    border:1px solid black;
+}
+#prodDet{
+    display: inline-grid;
+    width:100%;
+    height:400px;
+    grid-template-columns: repeat(3,1fr);
+}
+#myprod{
+    width:100%;
+    height: 1100%;
+}
