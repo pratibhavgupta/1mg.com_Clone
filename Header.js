@@ -40,7 +40,8 @@
 // }
 
 
-
+import { navbar } from "./components/navbar.js"
+document.getElementById("navbar").innerHTML = navbar()
 
 var counter = 1;
 setInterval(function () {
@@ -50,3 +51,10 @@ setInterval(function () {
     counter = 1;
   }
 }, 5000);
+
+
+
+
+// document.getElementById("check").addEventListener("click",function(){
+//   console.log("1wasrdtfgfd")
+// })
