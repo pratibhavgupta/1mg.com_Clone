@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+  }
+ 
+  #ContacyUS{
+    /* border: 1px solid red ; */
+    width:100% ;
+    margin-top: 5.5rem;
+  }
+ #ContacyUS>img,#download_app>img{
+    width: 100%;
+  }
+  #download_app img{
+    width: 100%;
+    cursor: pointer;
+  } 
+   #download_app{
+    /* border: 1px solid red ; */
+    width: 100%;       
+  }
+  @media all and (min-width: 597px) and (max-width: 700px) {
+    html {
+      font-size: 45%;
+    }
+   
+  }
+  @media all and (min-width: 351px) and (max-width: 596px) {
+    html {
+      font-size: 40%;
+    }
+  
+  }
+  @media all and (min-width: 100px) and (max-width: 350px) {
+    html {
+      font-size: 25%;
+    }
+   
+  }
