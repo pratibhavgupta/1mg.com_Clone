@@ -5,21 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
-    <link rel="icon" href="https://www.1mg.com/faviconRebrand.ico">
+    <link rel="icon" href="https://www.1mg.com/faviconRebrand.ico" />
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
     <!-- <link rel="stylesheet" href="styles/footer.css"> -->
+    <link rel="stylesheet" href="styles/prodDet.css" />
   </head>
   <body>
     <div id="navbar"></div>
-    <div id="prodDet">
-        <div id="image">
-            <img id="myprod" src="" alt="">
-        </div>
-        <div id="details"></div>
-        <div id="econ"></div>
+    <div id="address">
+      <a href=""><p>Home</p></a>> <a href=""><p>Featured</p></a>>
+      <a href=""><p>Deals of the Day</p></a>>
+      <p id="add">Product</p>
     </div>
+    <div id="product">
+      <div id="prodDet">
+        <div id="image">
+          <img id="myprod" src="" alt="" />
+        </div>
+        <div id="details">
+          <h2 id="title"></h2>
+          <div id="rate">
+            <p id="rating">
+              4.4
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="15"
+                viewBox="0 0 51 48"
+              >
+                <path
+                  fill="#ffffff"
+                  stroke="none"
+                  d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+                ></path>
+              </svg>
+            </p>
+            <p>17 Ratings & 2 Reviews</p>
+          </div>
+          <p>Product highlights</p>
+          <div id="high">
+            <li>Reduces fatigue</li>
+            <li>Maintains haemoglobin levels</li>
+            <li>Helps in developing healthy red blood cells</li>
+          </div>
+        </div>
+      </div>
+      <div id="econ">
+        <div></div>
+      </div>
+    </div>
+
     <div id="footer"></div>
   </body>
   <script src="scripts/prodPage.js" type="module"></script>
-</html> 
- 
+</html>
