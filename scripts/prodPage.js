@@ -5,10 +5,14 @@
 // document.getElementById("footer").innerHTML=footer();
 
 let prod = {
-  img: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1026-08-ktdpo2hf.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=762649fdf7d66f68f0d5fc1c694ce3ac",
-  title: "Wallpaper | Free Beautiful HD iPhone, Samsung & Mobile Phone ",
+  img: "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/uca5jm0uqfqpjoyydzh0.jpg",
+  title: "Dr. Morepen Iron & Zinc with Vitamin C & B12 Tablet",
   des: "Want to know where this information comes from? Learn more",
 };
 
-document.getElementById("myprod").src=prod.img;
+document.getElementById("myprod").src = prod.img;
+
+title.innerText = prod.title;
+
+
 
