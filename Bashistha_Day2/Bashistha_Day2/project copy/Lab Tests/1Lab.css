@@ -80,6 +80,7 @@ html {
     display: block;
     margin-top: 1rem;
     font-size: 1em;
+    /* color: blue; */
   }
   #BA_small_icons_parent > div > img {
     display: block;
@@ -120,6 +121,12 @@ html {
       grid-template-columns: repeat(2, 1fr);
       justify-content: space-between;
     }
+    #BA_small_icons_parent > div > span {
+      display: block;
+      margin-top: 1rem;
+      font-size: .7rem;
+      /* color: blue; */
+    }
   }
   @media all and (min-width: 100px) and (max-width: 350px) {
     html {
@@ -134,6 +141,12 @@ html {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content: space-between;
+    }
+    #BA_small_icons_parent > div > span {
+      display: block;
+      margin-top: 1rem;
+      font-size: .7rem;
+      /* color: blue; */
     }
     
   }
