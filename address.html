@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,18 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/address.css">
 </head>
+
 <body>
 
     <div id="cart_nav">
         <div id="nav_img">
             <a href="./index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></a>
-            <a href="/cart.html"><h3><i class="fa-regular fa-circle-check"></i> My Cart</h3></a>
+            <a href="/cart.html">
+                <h3><i class="fa-regular fa-circle-check"></i> My Cart</h3>
+            </a>
+            <a href="/address.html">
+                <h3><i class="fa-regular fa-circle-check"></i>Order Summary</h3>
+            </a>
         </div>
         <div id="help_add">
             <a href="">
@@ -41,10 +48,11 @@
                 <input type="radio">Other
             </div>
             <input type="submit" id="submit" value="Save" onclick="passValues()">
-        
+
         </form>
+
         <div id="show_add">
-           <h3> Added Address</h3>
+            <h3> Added Address</h3>
             <span id="result"></span>
             <span id="result1"></span>
             <span id="result2"></span>
@@ -53,27 +61,37 @@
             <span id="result5"></span>
             <span id="result6"></span>
             <span id="result7"></span>
+            <a href="/payment.html"><button>Payment</button></a>
         </div>
+       
+
+
     </div>
-    
-    
+
+
 
     <div id="a_down">
-        
-        <div >
+
+        <div>
             <hr>
-            <p>Tata 1mg is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personel to be his agent for delivery of the goods. For details read terms and conditions.</p>
+            <p>Tata 1mg is a technology platform to facilitate transaction of business. The products and services are
+                offered for sale by the sellers. The user authorizes the delivery personel to be his agent for delivery
+                of the goods. For details read terms and conditions.</p>
         </div>
         <div id="disc">
             <hr>
-            <p>*NeuCoins will be credited 7 days after your complete order is delivered in case of Products and in case of Lab Services NeuCoins will be credited within 24 hours from the time of generation of test report. NeuCoins will not be credited in case a return request is initiated for the order.
+            <p>*NeuCoins will be credited 7 days after your complete order is delivered in case of Products and in case
+                of Lab Services NeuCoins will be credited within 24 hours from the time of generation of test report.
+                NeuCoins will not be credited in case a return request is initiated for the order.
 
                 **Coupon Discount value may change if the total order value changes.
-                
-                ***Items in your cart will always reflect the most recent price as compared to the prices in their product detail page.</p>
+
+                ***Items in your cart will always reflect the most recent price as compared to the prices in their
+                product detail page.</p>
         </div>
     </div>
 </body>
+
 </html>
 
 <script src="/address.js"></script>

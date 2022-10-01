@@ -48,11 +48,6 @@ let data = JSON.parse(localStorage.getItem("arr"));
 
 
 
-
-
-
-
-
 var product_total_amt = document.getElementById("product_total_amt");
 var shipping_charge = document.getElementById("shipping_charge");
 var total_cart_amt = document.getElementById("total_cart_amt");
@@ -135,3 +130,24 @@ const discount_code = () => {
   }
 };
 
+// carousel
+
+const productContainers = [...document.querySelectorAll('.product1-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn1')];
+const preBtn = [...document.querySelectorAll('.pre-btn1')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+let paydata =document.getElementById("a_pay_detail").value
+localStorage.setItem()
