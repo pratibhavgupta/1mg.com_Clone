@@ -12,3 +12,4 @@ let prod = {
 
 document.getElementById("myprod").src=prod.img;
 
+ 
