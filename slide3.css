@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+button i{
+  margin-top: 80px;
+  font-size: 30px;
+}
     .product1 {
     
     width: 100%;
@@ -12,18 +16,22 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* border: 1px solid red; */
-   margin-top: -57px;
+   /* margin-top: -57px; */
+   padding-top: 20px;
+   
+   
    
     
     }
     
    
     .product1-container {
-       
+      /* border: 1px solid red;  */
     padding: 0 2vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    
     }
     
     .product1-container::-webkit-scrollbar {
@@ -35,16 +43,17 @@
         /* 8888 */
     flex:  0 0 auto;
     width: 12%;
-    height: 400px;
+    height: 450px;
     margin-right: 20px;
     margin-left: 20px;
+    
    
     
     }
     
     .product1-card:hover{
        
-        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
       
     }
 
@@ -98,7 +107,7 @@
     object-fit: cover;
     }
 
-    p{   
+    .product1-info>p{   
      text-align: center; 
      margin-top: 10px;  
     
@@ -180,6 +189,7 @@
     /* border: 1px solid red; */
    
    margin-top: 55px;
+   padding-top: 20px;
    /* margin-bottom: 20px; */
     
     }
@@ -206,12 +216,14 @@
     margin-right: 20px;
     margin-left: 20px;
    
+   
     
     }
     
     .product1-card2:hover{
        
-        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      
       
     }
 
@@ -265,7 +277,7 @@
     object-fit: cover;
     }
 
-    p{   
+    .product1-info2>p{   
      text-align: center; 
      margin-top: 10px;  
     
@@ -344,13 +356,16 @@
         .product3 {
         
         width: 100%;
-        height: 200px;
+        height: 300px;
+        
         display: block;
         position: relative;
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         /* border: 1px solid red; */
        /* margin-top:20px; */
+       padding-top: 20px;
+       padding-bottom: 20px;
         
         }
         
@@ -381,7 +396,8 @@
         
         .product3-card3:hover{
            
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      
           
         }
     
@@ -391,13 +407,13 @@
         border: none;
        
         width: 2vw;
-        height: 200px;
+        height: 300px;
         position: absolute;
         /* top: 1; */
         display: flex;
        
         background-color:white;
-        background-color: black;
+        /* background-color: black; */
         cursor: pointer;
         
         }
@@ -425,8 +441,9 @@
         
         position: relative;
         width: 100%;
-        height: 150px;
+        height:150px;
         overflow: hidden;
+        margin-bottom:40px ;
         
         
         }
@@ -434,20 +451,289 @@
         .product3-thumb3{
           display: block;
           margin: auto;
-        width: 70%;
-        height: 100%;
+        width: 80%;
+        height: 150px;
         object-fit: cover;
         overflow: hidden;
+        
         }
     
-        p{   
-         text-align: center; 
+        .product3-info3>p{   
+         /* text-align: center;  */
          margin-top: 10px;  
         
          font-size: 12px;
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
          font-weight: bold;
+         margin-left: 5px;
         }
        
+
+        /* <!-- Shop by Health Concerns --> */
         
+        #Concerns{
+          width: 100%;
+          height: 80px;
+         
+          /* margin-top: 18px; */
+          background-color: rgb(239, 243, 243);
+      }
+      #Concerns>h3{
+        margin-left: 40px;
+        padding-top: 50px;
+        margin-bottom: -50px;
+        background-color: rgb(239, 243, 243);
+       
+      }
+      #Concerns>button{
+          margin-left: 1250px;
+          margin-top: 20px;
+          
+          margin-bottom: -20px;
+          background-color: red;
+          border: none;
+          padding: 5px;
+          color: white;
+          
+        }
+  
+         /* <!-- Shop by Health Concerns slide--> */
+
+         .product4 {
     
+          width: 100%;
+          height: 200px;
+          display: block;
+          position: relative;
+          overflow: hidden;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          /* border: 1px solid red; */
+         
+         padding-top: 20px;
+         
+          
+          }
+          
+         
+          .product4-container4 {
+             
+          padding: 0 2vw;
+          display: flex;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          }
+          
+          .product4-container4::-webkit-scrollbar {
+          display: none;
+          }
+          
+          .product4-card4 {
+      
+              /* 8888 */
+          flex:  0 0 auto;
+          width: 12%;
+          height: 200px;
+          margin-right: 20px;
+          margin-left: 20px;
+         
+          
+          }
+          
+          .product4-card4:hover{
+             
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      
+          }
+      
+          .pre-btn4,
+          .nxt-btn4 {
+          border: none;
+         
+          width: 2vw;
+          height: 200px;
+          position: absolute;
+          /* top: 1; */
+          display: flex;
+          
+          background-color:white;
+          cursor: pointer;
+          
+          }
+      
+          .pre-btn4 {
+          left: 0;
+         
+          }
+      
+          .nxt-btn4 {
+          right: 0;
+          }
+      
+          .pre-btn4 img,
+          .nxt-btn4 img {
+          opacity: 0.2;
+          }
+      
+          .pre-btn4:hover img,
+          .nxt-btn4:hover img {
+          opacity: 3;
+          }
+          
+          .product4-image4 {
+          display: block;
+          margin: auto;
+          position: relative;
+          width:90%;
+          /* height: 250px; */
+          overflow: hidden;
+          
+          
+          }
+          
+          .product4-info4 {
+          width: 100%;
+          /* height: 100%; */
+          object-fit: cover;
+          }
+      
+          .product4-info4>p{   
+           text-align: center; 
+           margin-top: 10px;  
+          
+           font-size: 12px;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           font-weight: bold;
+          }
+
+          /* <!-- Popular Combo Deals --> */
+
+           
+        #PopularComboDeals{
+          width: 100%;
+          height: 80px;
+         
+          /* margin-top: 18px; */
+          background-color: rgb(239, 243, 243);
+      }
+      #PopularComboDeals>h3{
+        margin-left: 40px;
+        padding-top: 50px;
+        margin-bottom: -50px;
+        background-color: rgb(239, 243, 243);
+       
+      }
+      #PopularComboDeals>button{
+          margin-left: 1250px;
+          margin-top: 20px;
+          
+          margin-bottom: -20px;
+          background-color: red;
+          border: none;
+          padding: 5px;
+          color: white;
+          
+        }
+    /* ******************************************     */
+        /* <!-- Antioxidants | Supplement of the week --> */
+            
+        #Antioxidants{
+          width: 100%;
+          height: 80px;
+         
+          /* margin-top: 18px; */
+          background-color: rgb(239, 243, 243);
+      }
+      #Antioxidants>h3{
+        margin-left: 40px;
+        padding-top: 50px;
+        margin-bottom: -50px;
+        background-color: rgb(239, 243, 243);
+       
+      }
+      #Antioxidants>button{
+          margin-left: 1250px;
+          margin-top: 20px;
+          
+          margin-bottom: -20px;
+          background-color: red;
+          border: none;
+          padding: 5px;
+          color: white;
+          
+        }
+
+        /* ****************** */
+        /* <!-- In the spotlight --> */
+
+        #Inthespotlight{
+          width: 100%;
+          height: 80px;
+         
+          /* margin-top: 18px; */
+          background-color: rgb(239, 243, 243);
+      }
+      #Inthespotlight>h3{
+        margin-left: 40px;
+        padding-top: 50px;
+        margin-bottom: -50px;
+        background-color: rgb(239, 243, 243);
+       
+      }
+      #Inthespotlight>button{
+          margin-left: 1250px;
+          margin-top: 20px;
+          
+          margin-bottom: -20px;
+          background-color: red;
+          border: none;
+          padding: 5px;
+          color: white;
+          
+        }
+/* ******************** */
+/* <!-- Trending now --> */
+#Trendingnow{
+  width: 100%;
+  height: 80px;
+ 
+  /* margin-top: 18px; */
+  background-color: rgb(239, 243, 243);
+}
+#Trendingnow>h3{
+margin-left: 40px;
+padding-top: 50px;
+margin-bottom: -50px;
+background-color: rgb(239, 243, 243);
+
+}
+#Trendingnow>button{
+  margin-left: 1250px;
+  margin-top: 20px;
+  
+  margin-bottom: -20px;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  color: white;
+  
+}
+
+#textDiv{
+  width: 93%;
+  margin: auto;
+ 
+}
+
+#textDiv>h2{
+  margin-top: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#textDiv>h3{
+  margin-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#textDiv>p{
+  margin-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
