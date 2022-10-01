@@ -18,30 +18,30 @@ let data = JSON.parse(localStorage.getItem("arr"));
 
 // let data=JSON.parse(localStorage.getItem('movie'));
 
-function array(data) {
-    let data_div = document.getElementById("a_checkout");
-    data_div.innerHTML = null;
-    // data_div.id='a_checkout';
-    let data = JSON.parse(localStorage.getItem("arr"));
+// function array(data) {
+//     let data_div = document.getElementById("a_checkout");
+//     data_div.innerHTML = null;
+//     // data_div.id='a_checkout';
+//     let data = JSON.parse(localStorage.getItem("arr"));
 
   
-    data.forEach(function (el) {
-      let div = document.createElement("div");
-      console.log(div);
-      let p_name = document.createElement("p");
-      p_name.innerHTML = el.name;
+//     data.forEach(function (el) {
+//       let div = document.createElement("div");
+//       console.log(div);
+//       let p_name = document.createElement("p");
+//       p_name.innerHTML = el.name;
   
-      let p_price = document.createElement("p");
-      p_price.innerHTML = el.price;
+//       let p_price = document.createElement("p");
+//       p_price.innerHTML = el.price;
   
-      let title = document.createElement("title");
-      title.innerHTML = el.title;
+//       let title = document.createElement("title");
+//       title.innerHTML = el.title;
   
-      div.append(title, p_name, p_price);
+//       div.append(title, p_name, p_price);
   
-      data_div.append(div);
-    });
-  }
+//       data_div.append(div);
+//     });
+//   }
   
 
 
