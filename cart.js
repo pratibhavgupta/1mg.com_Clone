@@ -1,19 +1,19 @@
-const arr = [
-  {
-    title: "Membership added to cart",
-    name: "qwertyuiopasdfghjkl",
-    price: 30,
-  },
-  {
-    title: "mnbvcxkjhgfdiuyt",
-    name: "makkkkkkkkkkkk",
-    price: 10,
-  },
-];
+// const arr = [
+//   {
+//     title: "Membership added to cart",
+//     name: "qwertyuiopasdfghjkl",
+//     price: 30,
+//   },
+//   {
+//     title: "mnbvcxkjhgfdiuyt",
+//     name: "makkkkkkkkkkkk",
+//     price: 10,
+//   },
+// ];
 
-localStorage.setItem("arr", JSON.stringify(arr)) || [];
+// localStorage.setItem("arr", JSON.stringify(arr)) || [];
 //  const membership=document.getElementById("a_membership");
-let data = JSON.parse(localStorage.getItem("arr"));
+// let data = JSON.parse(localStorage.getItem("arr"));
 // console.log(data)
 
 // let data=JSON.parse(localStorage.getItem('movie'));
@@ -149,5 +149,27 @@ productContainers.forEach((item, i) => {
     })
 })
 
-let paydata =document.getElementById("a_pay_detail").value
-localStorage.setItem()
+let paydata =document.getElementById("push")
+// localStorage.setItem("push", JSON.stringify(paydata)) || [];
+// //  const membership=document.getElementById("a_membership");
+// let push = JSON.parse(localStorage.getItem("push"));
+// console.log(push)
+
+// paydata = $('#push').text();
+
+// set the item in localStorage
+// paydata = localStorage.setItem('push', text);
+
+// bind text to 'blur' event for div
+// $('#push').on('blur', function() {
+
+//     // check the new text
+//     var newText = $(this).text();
+
+//     // overwrite the old text
+//     localStorage.setItem('push', newText);
+
+//     // test if it works
+//     alert(localStorage.getItem('push'));
+
+// });
