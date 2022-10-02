@@ -61,6 +61,7 @@ function displayData(myProd){
 
     let img=document.createElement("img");
     img.src=el.img;
+    
     let title=document.createElement("p");
     title.innerText=el.title;
     let price=document.createElement("p");
@@ -72,8 +73,14 @@ function displayData(myProd){
 
     container.append(div);
 
+    
+
   })
 }
+function remove() {
+      localStorage.clear();
+      // localStorage.removeItem("myProd");
+    }
 
 
 var product_total_amt = document.getElementById("product_total_amt");
@@ -116,6 +123,7 @@ const decreaseNumber = (incdec, itemprice) => {
 
     //  }
   }
+  
 };
 const increaseNumber = (incdec, itemprice) => {
   var itemval = document.getElementById(incdec);
