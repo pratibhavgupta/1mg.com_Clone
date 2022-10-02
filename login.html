@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./Styles_SG/login.css" />
     <title>Login</title>
   </head>
+
   <body>
-    <div class="container">
+    <div id="container">
       <div class="box">
         <img
           src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png"
@@ -21,7 +22,7 @@
           doctors online from the comfort of your home.
         </p>
       </div>
-
+       <div class="vl"></div>
       <div class="center">
         <!-- <h1>Login</h1> -->
         <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="" />
@@ -57,7 +58,6 @@
 <script>
   let form = document.querySelector("form");
   form.addEventListener("submit", myForm);
-
 
   function myForm(event) {
     event.preventDefault();

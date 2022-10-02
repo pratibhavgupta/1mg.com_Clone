@@ -1,20 +1,20 @@
-const arr = [
-  {
-    title: "Ensure Vanilla Powder Refill",
-    name: "Ensure Vanilla Powder Refill",
-    price: 30,
-  },
-  {
-    title: "Ensure Vanilla Powder Refill",
-    name: "Ensure Vanilla Powder Refill",
-    price: 10,
-  },
-];
+// const arr = [
+//   {
+//     title: "Ensure Vanilla Powder Refill",
+//     name: "Ensure Vanilla Powder Refill",
+//     price: 30,
+//   },
+//   {
+//     title: "Ensure Vanilla Powder Refill",
+//     name: "Ensure Vanilla Powder Refill",
+//     price: 10,
+//   },
+// ];
 
-localStorage.setItem("arr", JSON.stringify(arr)) || [];
+// localStorage.setItem("arr", JSON.stringify(arr)) || [];
 //  const membership=document.getElementById("a_membership");
-let data = JSON.parse(localStorage.getItem("arr"));
-console.log(data)
+// let data = JSON.parse(localStorage.getItem("arr"));
+// console.log(data)
 
 // let data=JSON.parse(localStorage.getItem('movie'));
 
@@ -45,7 +45,35 @@ console.log(data)
   
 
 
+let myprice=0;
 
+let myProd=JSON.parse(localStorage.getItem("prodArr"));
+
+
+displayData(myProd);
+function displayData(myProd){
+  let container=document.getElementById("my");
+  container.innerHTML=null;
+   
+  
+  myProd.forEach(function(el){
+    let div=document.createElement("div");
+
+    let img=document.createElement("img");
+    img.src=el.img;
+    let title=document.createElement("p");
+    title.innerText=el.title;
+    let price=document.createElement("p");
+    price.innerText="₹" +el.price;
+    
+    myprice+=el.price;
+
+    div.append(img,title,price);
+
+    container.append(div);
+
+  })
+}
 
 
 var product_total_amt = document.getElementById("product_total_amt");
@@ -65,10 +93,10 @@ const decreaseNumber = (incdec, itemprice) => {
     itemval.style.background = "#fff";
     itemval.style.color = "#000";
 
-    for (let j = 0; j < data.length; j++) {
-      itemprice.innerHTML = parseInt(itemprice.innerHTML) - data[j].price;
+    for (let j = 0; j < myProd.length; j++) {
+      itemprice.innerHTML = parseInt(itemprice.innerHTML) -  Number(myProd[j].price);
       product_total_amt.innerHTML =
-        parseInt(product_total_amt.innerHTML) - data[j].price;
+        parseInt(product_total_amt.innerHTML) -  Number(myProd[j].price);
     }
 
     total_cart_amt.innerHTML =
@@ -101,10 +129,10 @@ const increaseNumber = (incdec, itemprice) => {
   } else {
     itemval.value = parseInt(itemval.value) + 1;
 
-    for (let j = 0; j < data.length; j++) {
-      itemprice.innerHTML = parseInt(itemprice.innerHTML) + data[j].price;
+    for (let j = 0; j < myProd.length; j++) {
+      itemprice.innerHTML = parseInt(itemprice.innerHTML) +  Number(myProd[j].price);
       product_total_amt.innerHTML =
-        parseInt(product_total_amt.innerHTML) + data[j].price;
+        parseInt(product_total_amt.innerHTML) + Number(myProd[j].price);
     }
 
     //  itemprice.innerHTML = parseInt(itemprice.innerHTML) + data.price;
@@ -173,3 +201,6 @@ let paydata =document.getElementById("push")
 //     alert(localStorage.getItem('push'));
 
 // });
+
+
+

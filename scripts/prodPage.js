@@ -37,6 +37,16 @@ let addCart = document.querySelector("#addCart");
 addCart.addEventListener("click", function () {
   addCart.innerText="ADDED TO CART";
   
+  let prodArr=JSON.parse(localStorage.getItem("prodArr"))||[];
+  let obj={
+    img:prod.oneimg,
+    title:prod.onet,
+    price:prod.onep,
+  }
+
+  prodArr.push(obj);
+  localStorage.setItem("prodArr",JSON.stringify(prodArr));
+
 });
 
 // youtube iframe
