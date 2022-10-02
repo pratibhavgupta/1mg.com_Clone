@@ -1,44 +1,57 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
 #container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.center {
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  width: 58%;
+  height: 42vw;
   position: absolute;
+  top: 5%;
+  left: 20%;
+  gap: 2px;
+}
+
+
+.center{
+  /* position: absolute;
   top: 50%;
   left: 65%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   width: 29vw;
-
+  height: 38.3vw;
   background: white;
   /* border-radius: 10px; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  
 }
-.center img {
+.center img{
   padding: 10px;
   margin-left: 30px;
 }
-.center h1 {
+.center h1{
+ 
   padding: 5px 0 5px 40px;
-  font-family: Clear Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   opacity: 1.1;
   font-size: 20px;
   font-weight: 700;
   color: #666666;
+ 
+  
 }
-.center form {
+.center form{
   padding: 0 40px;
   box-sizing: border-box;
 }
-form .txt_field {
+form .txt_field{
   position: relative;
   border-bottom: 2px solid #adadad;
   margin: 30px 0;
 }
-.txt_field input {
+.txt_field input{
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -46,44 +59,48 @@ form .txt_field {
   border: none;
   background: none;
   outline: none;
+
 }
-.txt_field label {
+.txt_field label{
   position: absolute;
   top: 50%;
   left: 5px;
-  color: #adadad;
+  color:#adadad;
   transform: translateY(-50%);
   font-size: 16px;
   pointer-events: none;
+
 }
-.txt_field span::before {
-  content: "";
+.txt_field span::before{
+  content: '';
   position: absolute;
   top: 40px;
   left: 0;
   width: 0px;
   height: 2px;
   background: #2691d9;
-  transition: 0.5s;
+  transition: .5s;
+
 }
 .txt_field input:focus ~ lable,
-.txt_field input:valid ~ label {
+.txt_field input:valid ~ label{
   top: -5px;
   color: #2691d9;
 }
 .txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before {
+.txt_field input:valid ~ span::before{
   width: 100%;
 }
-.pass {
+.pass{
   margin: -5px 0 20px 5px;
   color: #a6a6a6;
   cursor: pointer;
+
 }
-.pass:hover {
+.pass:hover{
   text-decoration: underline;
 }
-input[type="Submit"] {
+input[type="Submit"]{
   width: 100%;
   height: 50px;
   border: 1px solid;
@@ -94,55 +111,70 @@ input[type="Submit"] {
   background-color: #ef2b1a;
   color: white;
 }
-input[type="Submit"]:hover {
-  background: #ff6f61;
+input[type="Submit"]:hover{
+
+  background:#ff6f61;
   color: #e9f4fb;
-  transition: 0.5s;
+  transition: .5s;
 }
-.signup_link {
+.signup_link{
+ 
   margin: 20px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;
+
 }
-.signup_link a {
+.signup_link a{
   color: #ef2b1a;
   text-decoration: underline;
+
 }
-.signup_link a:hover {
+.signup_link a:hover{
   text-decoration: underline;
+
 }
-img {
+img{
   width: 30%;
   padding: 10px 0 10px 40px;
 }
-p {
+p{
   margin-top: 3px;
 }
 
-.box {
-  position: absolute;
+
+.box{
+  /* position: absolute;
   top: 8.7%;
-  left: 21.3%;
+  left: 21.3%; */
   width: 29vw;
-  height: 39.3vw;
+  height: 38.3vw;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   text-align: center;
+
 }
-.box img {
+.box img{
   padding: 120px 50px 50px 50px;
+ 
 }
-.box h2 {
+.box h2{
   padding: 10px;
-  font-family: Clear Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   opacity: 1.1;
   font-size: 20px;
   font-weight: 700;
   color: #252525;
 }
-.box p {
+.box p{
+  
   padding: 10px;
   opacity: 1;
   color: #252525;
+
+}
+.vl {
+  border-left: 1px solid grey ;
+  height: 550px;
+  margin: auto;
 }

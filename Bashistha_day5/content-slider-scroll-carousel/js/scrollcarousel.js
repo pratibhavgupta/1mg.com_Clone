@@ -350,3 +350,11 @@ UNCOMMENT THIS FOR TESTING
 */
 
 $('.carousel').scrollCarousel({snapAlignment: 'left'});
+
+
+
+
+
+
+import {navbar} from "./navbar.js";
+document.getElementById("navbar").innerHTML=navbar();
