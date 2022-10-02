@@ -1,0 +1,280 @@
+
+#Medicines {
+ 
+  width: 100%;
+ 
+  margin: auto;
+ 
+  display: grid;
+  grid-template-columns:repeat(5,1fr);
+  justify-content: space-between;
+  overflow: hidden;
+}
+#Medicines > div {
+  border: 0.1em solid rgb(234, 234, 234);
+  
+  margin-top: 30px;
+}
+
+#Medicines > div:hover{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.Medicines_child {
+  display: grid;
+  
+  
+}
+
+.Medicines_child > div:nth-child(1) {
+  display: grid;
+  grid-template-columns: 70% 20%;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.Medicines_child > div:nth-child(1) > div img {
+  width: auto;
+}
+.Medicines_child > div:nth-child(1) > div {
+  /* border: 0.1em solid; */
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Medicines_child > div:nth-child(1) > div:nth-child(2) {
+  background-color: #ffe3c2;
+}
+
+.small_text {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #757575de;
+}
+.Medicines_child > div:nth-child(3) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Medicines_child > div:nth-child(3) > div > img {
+  width: 100%;
+}
+.staricon_Parents_parent {
+  align-items: center;
+}
+.staricon_Parents_parent > div:nth-child(2) {
+  width: 100%;
+  height: 50%;
+}
+.staricon_Parent {
+  
+  font-size: 1.2em;
+}
+
+.staricon_Parent > div:nth-child(1) {
+  background-color: green;
+  color: white;
+  width: 32%;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.More {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.rupees {
+  color: #3e3e3e;
+  font-size: 1.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.strike {
+  font-size: 1.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9b9b9b;
+}
+.Off {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1aab2a;
+  font-weight: bold;
+  border: 0.1rem solid #1aab2a;
+  border-style: dotted;
+}
+.Medicines_child > div:nth-child(10) {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+.ADD_CART {
+  border-radius: 0.5rem;
+  background-color: rgb(255, 111, 97);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+}
+.Medicines_child > div:nth-child(11) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3e3e3ede;
+}
+@media all and (min-width: 597px) and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  .ADD_CART {
+    border-radius: 0.5rem;
+    background-color: rgb(255, 111, 97);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  #View_All_Packages > div {
+    border: 0.1em solid;
+    width: 8%;
+    border-radius: 2rem;
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #737373;
+    text-align: center;
+  }
+}
+@media all and (min-width: 351px) and (max-width: 596px) {
+  html {
+    font-size: 40%;
+  }
+  #Medicines {
+    
+    width: 80%;
+    height: 43rem;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  .ADD_CART {
+    border-radius: 0.5rem;
+    background-color: rgb(255, 111, 97);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  #View_All_Packages > div {
+    border: 0.1em solid;
+    width: 8%;
+    border-radius: 2rem;
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #737373;
+    text-align: center;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 350px) {
+  html {
+    font-size: 25%;
+  }
+  #Medicines {
+    
+    width: 90%;
+    height: 43rem;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .ADD_CART {
+    border-radius: 0.5rem;
+    background-color: rgb(255, 111, 97);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  #View_All_Packages > div {
+    border: 0.1em solid;
+    width: 8%;
+    border-radius: 2rem;
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #737373;
+    text-align: center;
+  }
+}
+
+#Medicines h3{
+  font-size: 15px;
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.small_text{
+  font-size: 10px;
+  margin-left: 12px;
+}
+.Medicines_child{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#mainID{
+  display: inline-grid;
+}
+
+ .rupees{
+  font-size: 20px;
+ 
+}
+
+#IDD{
+ margin-left: 20px;
+}
+
+.strike{
+  font-size: 20px;
+}
+.Off{
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+
+
+
+
