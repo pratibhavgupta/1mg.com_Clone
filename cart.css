@@ -169,8 +169,16 @@ h2 {
   margin-top: 20px;
   padding: 10px 20px 2px 20px;
   width: auto;
+  height: auto;
   font-size: 13px;
   margin-bottom: 20px;
+}
+.col-6 img{
+  width: 80px;
+}
+.col-6 p{
+  font-size: 20px;
+  text-align: left;
 }
 .set_quantity {
   position: relative;

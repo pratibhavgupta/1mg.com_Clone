@@ -1,8 +1,8 @@
-// import {navbar} from "../navbar.js"
-// document.getElementById("navbar").innerHTML=navbar();
+import {navbar} from "../components/navbar.js"
+document.getElementById("navbar").innerHTML=navbar();
 
-// import {footer} from "../components/footer.js"
-// document.getElementById("footer").innerHTML=footer();
+import {footer} from "../components/footer.js"
+document.getElementById("footer").innerHTML=footer();
 
 let prod = JSON.parse(localStorage.getItem("product"))
 
@@ -11,8 +11,8 @@ document.getElementById("myprod").src = prod.oneimg;
 title.innerText = prod.onet;
 
 
-
-
+document.querySelector(".pri").innerText="₹"+prod.onep;
+document.querySelector("#pri").innerText="₹"+prod.onep;
 
 let add=document.getElementById("add");
 add.innerText=prod.onet;

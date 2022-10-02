@@ -70,7 +70,7 @@ body {
 }
 #econo {
   width: 100%;
-  display: grid;
+  /* display: grid; */
 }
 .price {
   display: flex;
@@ -88,9 +88,13 @@ body {
   font-size: 25px;
   color: #444444;
 }
+#pri {
+  font-size: 25px;
+  color: #444444;
+}
 #tax {
-  font-size: 12px;
-  margin-top: -39px;
+  font-size: 13px;
+  margin-bottom: 30px;
 }
 #addCart {
   background-color: #ff6f61;

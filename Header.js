@@ -58,3 +58,5 @@ pro.innerText=Name[0].nickName;
 // document.getElementById("check").addEventListener("click",function(){
 //   console.log("1wasrdtfgfd")
 // })
+
+document.querySelector("#navbar >#first")
