@@ -9,6 +9,7 @@ body {
   width: 100%;
   display: inline-grid;
   grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 10px;
   /* border: 1px solid blue; */
 }
 #navbar #first {
@@ -140,6 +141,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1px solid #f1f4f6;
+  padding:10px 0px 10px 0px;
 }
 #navbar .down {
   width: 18px;
