@@ -19,6 +19,11 @@
 
 
 
+
+import { footer } from "./components/footer.js"
+document.getElementById("footer").innerHTML = footer()
+
+
 const productContainers = [...document.querySelectorAll('.product1-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn1')];
 const preBtn = [...document.querySelectorAll('.pre-btn1')];
