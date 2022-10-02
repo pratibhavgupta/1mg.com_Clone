@@ -1,20 +1,20 @@
-// const arr = [
-//   {
-//     title: "Membership added to cart",
-//     name: "qwertyuiopasdfghjkl",
-//     price: 30,
-//   },
-//   {
-//     title: "mnbvcxkjhgfdiuyt",
-//     name: "makkkkkkkkkkkk",
-//     price: 10,
-//   },
-// ];
+const arr = [
+  {
+    title: "Ensure Vanilla Powder Refill",
+    name: "Ensure Vanilla Powder Refill",
+    price: 30,
+  },
+  {
+    title: "Ensure Vanilla Powder Refill",
+    name: "Ensure Vanilla Powder Refill",
+    price: 10,
+  },
+];
 
-// localStorage.setItem("arr", JSON.stringify(arr)) || [];
+localStorage.setItem("arr", JSON.stringify(arr)) || [];
 //  const membership=document.getElementById("a_membership");
-// let data = JSON.parse(localStorage.getItem("arr"));
-// console.log(data)
+let data = JSON.parse(localStorage.getItem("arr"));
+console.log(data)
 
 // let data=JSON.parse(localStorage.getItem('movie'));
 

@@ -52,9 +52,9 @@ setInterval(function () {
   }
 }, 5000);
 
-
-
-
+let Name=JSON.parse(localStorage.getItem("nickName"))
+let pro=document.getElementById("sign");
+pro.innerText=Name[0].nickName;
 // document.getElementById("check").addEventListener("click",function(){
 //   console.log("1wasrdtfgfd")
 // })

@@ -84,6 +84,7 @@ $('.input-cart-number').on('keyup change', function(){
     setTimeout(() => {
         alert("Your Order Is Successfully Placed")
         alert("Thank You!")
+        window.location.href="Header.html"
     }, 0);
     
     // setTimeout(() => {
