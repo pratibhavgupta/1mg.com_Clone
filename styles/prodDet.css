@@ -5,13 +5,18 @@ body {
 div {
   border: 1px solid black;
 }
+#myProductPage{
+  display:inline-grid;
+  gap:30px;
+  margin:auto
+}
 #address {
   display: flex;
   /* width: 23%; */
   /* justify-content: space-evenly; */
   gap: 8px;
   align-items: center;
-  margin: 10px 0px 30px 67px;
+  margin: -20px 0px 0px 67px;
   font-size: 12.5px;
   color: #3a3631;
 }
@@ -24,36 +29,125 @@ div {
   width: 90%;
   margin: auto;
   justify-content: space-between;
-  grid-template-columns:65% 30%;
+  grid-template-columns: 65% 30%;
 }
 #prodDet {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:10px
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  /* margin: auto; */
 }
 #myprod {
   width: 100%;
   /* height: 100%; */
 }
-#prodDet h2{
-    margin: auto;
-    line-height: 35px;
+#prodDet h2 {
+  margin: auto;
+  line-height: 35px;
 }
-#rating{
-    background-color: green;
-    color: white;
-    width:12%;
-    padding: 2px;
-    
+#rating {
+  background-color: green;
+  color: white;
+  width: 12%;
+  padding: 2px;
 }
-#rate{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    align-items: center;
-    gap:3px
+#rate {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  align-items: center;
+  gap: 3px;
 }
-#high{
-    font-size: 14px;
-    line-height: 20px;
+#high {
+  font-size: 14px;
+  line-height: 20px;
+}
+#econ {
+  display: grid;
+  border: 1px solid red;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#econo {
+  width: 100%;
+  display: grid;
+}
+.price {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#dis {
+  background-color: #edf9ee;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px;
+}
+.pri {
+  font-size: 25px;
+  color: #444444;
+}
+#tax {
+  font-size: 12px;
+  margin-top: -39px;
+}
+#addCart {
+  background-color: #ff6f61;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+#offdet {
+  display: flex;
+  align-items: center;
+}
+#cont {
+  display: flex;
+  font-size: 12px;
+  color: #2f3639;
+  /* width:40%; */
+  
+}
+#sug{
+  width:90%;
+  margin: auto;
+  display:grid;
+  grid-template-columns:50% 30%;
+  justify-content: space-between;
+}
+#you{
+  width:560px;
+  height:315px;
+}
+iframe{
+  width:100%;
+  height:100%;
+}
+#offer{
+  display:grid;
+  height:40%;
+  align-items: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 8px;
+  border-radius: 10px;  
+}
+#nameOff{
+  background-color: green;
+  color:white;
+  width:30%;
+  padding:5px;
+  font-size: 12px;
+  border-radius: 3px;
+  border:none;
+}
+#myi{
+  padding:10px
 }

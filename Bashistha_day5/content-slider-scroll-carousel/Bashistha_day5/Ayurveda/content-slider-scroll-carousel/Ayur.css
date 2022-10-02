@@ -1,0 +1,16 @@
+.patanjali_div {
+    border: .2rem solid transparent;
+    width: 100%;
+    margin: auto;
+  }
+  .patanjali_div >img{
+    width: 100%;
+  }
+  .sct_img_link{
+    border: .2rem solid transparent;
+    width: 100%;
+  }
+  .sct_img_link >img{
+    display: block;
+    width: 100%;
+  }

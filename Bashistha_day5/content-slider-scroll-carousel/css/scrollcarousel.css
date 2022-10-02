@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid transparent;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 5px;
+}
+
+.carousel {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* display: -webkit-box;
+    display: -ms-flexbox; */
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+ 
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  /* background-color: blue; */
+  list-style: none;
+  padding: 10px;
+  height: 100%;
+  min-width: 250px;
+  /* margin: 20px 0 20px 20px; */
+  position: relative;
+  margin: auto;
+}
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* .carousel-item:nth-child(odd) {
+    background: #db7093
+} */
+/* 
+.carousel-item:nth-child(even) {
+    background: #eee8aa
+} */
+
+.carousel-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  /* right: -20px;
+  width: -20px; */
+  height: 1px;
+}
+
+.wc__button {
+  /* background: rgba(0, 0, 0, .25); */
+  color: transparent;
+  border: none;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.wc__next-button {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.wc__prev-button {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.wc__indicator-container {
+  min-width: 500px;
+  /* display: -webkit-box;
+    display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-pack: justify;
+    -ms-flex-pack: justify; */
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 250px);
+}
+
+.wc__indicator-button {
+  /* background: rgba(0, 0, 0, .5); */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  cursor: pointer;
+  /* -webkit-transition: .3s background ease-in-out;
+    -o-transition: .3s background ease-in-out;
+    transition: .3s background ease-in-out */
+}
+
+.wc__indicator-button:focus,
+.wc__indicator-button:hover {
+  /* background: rgba(0, 0, 0, .75) */
+}
+.wc__next-button,
+.wc__prev-button {
+  font-family: FontAwesome;
+  font-size: 24px;
+  padding: 10px;
+}
+.wc__next-button:before {
+  content: '\f105';
+}
+.wc__prev-button:before {
+  content: '\f104';
+}
+p {
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+}
+span {
+  color: #878787;
+  font-size: 8px;
+}
+.Herb_name{
+    width: 100%;
+    height: 50px;
+  
+   
+}
+.Herb_name>img{
+   width: 100%;
+}
