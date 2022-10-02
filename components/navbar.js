@@ -10,7 +10,7 @@ const navbar=()=>{
   </div>
   <div id="second">
     <div>
-      <a href=""
+      <a href="Header.html"
         ><img
           id="icon"
           src="https://www.1mg.com/images/tata_1mg_logo.svg"
@@ -18,25 +18,25 @@ const navbar=()=>{
       /></a>
     </div>
     <div id="sections">
-      <a href=""><h4>MEDICINES</h4></a>
+      <a href="Header.html"><h4>MEDICINES</h4></a>
       <p>SAFE</p>
-      <a href=""><h4>LAB TESTS</h4> </a>
-      <a href=""><h4>CONSULT DOCTORS</h4></a>
-      <a href=""> <h4>COVID-19</h4></a>
-      <a href=""><h4>AYURVEDA</h4></a>
+      <a href="Bashistha_Day2/Bashistha_Day2/project copy/Lab Tests/lab.html"><h4>LAB TESTS</h4> </a>
+      <a href="Bashistha_Day3/Consult Doctors/part1.html"><h4>CONSULT DOCTORS</h4></a>
+      <a href="Bashistha_day4/covid.html"> <h4>COVID-19</h4></a>
+      <a href="Bashistha_day5/content-slider-scroll-carousel/index.html"><h4>AYURVEDA</h4></a>
       <a href=""><h4>CARE PLAN</h4> </a>
       <p>SAVE MORE</p>
     </div>
     <div id="login">
       <div id="sign">
-        <a href=""><p>Login</p></a>
+        <a href="login.html"><p>Login</p></a>
         <p> |</p>
-        <a href=""><p>Sign Up</p></a>
+        <a href="index.html"><p>Sign Up</p></a>
       </div>
       
       <div><a href=""><p>Offers</p></a></div>
       <div>
-        <a href=""><img
+        <a href="cart.html"><img
           id="cart"
           src="https://cdn-icons-png.flaticon.com/128/8484/8484982.png"
           alt=""
