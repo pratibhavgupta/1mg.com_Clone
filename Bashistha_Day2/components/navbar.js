@@ -11,7 +11,7 @@ const navbar = () => {
   </div>
   <div id="second">
     <div>
-      <a href=""
+      <a href="Header.html"
         ><img
           id="icon"
           src="https://www.1mg.com/images/tata_1mg_logo.svg"
@@ -19,7 +19,7 @@ const navbar = () => {
       /></a>
     </div>
     <div id="sections">
-      <a href=""><h4>MEDICINES</h4></a>
+      <a href="Header.html"><h4>MEDICINES</h4></a>
       <p>SAFE</p>
       <a href=""><h4>LAB TESTS</h4> </a>
       <a href=""><h4>CONSULT DOCTORS</h4></a>
@@ -37,7 +37,7 @@ const navbar = () => {
       
       <div><a href=""><p>Offers</p></a></div>
       <div>
-        <a href=""><img
+        <a href="/cart.html"><img
           id="cart"
           src="https://cdn-icons-png.flaticon.com/128/8484/8484982.png"
           alt=""

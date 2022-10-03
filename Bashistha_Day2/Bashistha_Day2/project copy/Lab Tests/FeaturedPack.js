@@ -1,24 +1,52 @@
-let h3_1to_store_LS = document.getElementById('h3_1to_store_LS');
-let price1_to_store_LS = document.getElementById('p1Price');
-let arr = JSON.parse(localStorage.getItem('FeaturedPackages')) || [];
-let x1 = localStorage.getItem('x1') || 0;
-function press_cart1() {
-  let obj = {
-    Package1Name: h3_1to_store_LS.innerText,
-    Package1Price: +price1_to_store_LS.innerText,
-  };
-  if (x1 === 0) {
-    arr.push(obj);
-    localStorage.setItem('FeaturedPackages', JSON.stringify(arr));
-    console.log(arr);
-    x1++;
-    localStorage.setItem('x1', +x1);
-    return;
-  } else {
-    alert('Try To Add another Package');
-    return;
-  }
+let h3_1to_store_LS = document.getElementById('h3_1to_store_LS').innerText;
+let price1_to_store_LS =+ document.getElementById('p1Price').innerText;
+let tata_img= document.getElementById('tata_img1').src;
+
+let prod ={
+  oneimg:tata_img,
+  onet:h3_1to_store_LS,
+  onep:price1_to_store_LS,
 }
+// let x1 = localStorage.getItem('x1') || 0;
+
+
+function press_cart1() {
+  // let obj = {
+  //   Package1Name: h3_1to_store_LS.innerText,
+  //   Package1Price: +price1_to_store_LS.innerText,
+  // };
+  // if (x1 === 0) {
+  //   arr.push(obj);
+  //   localStorage.setItem('FeaturedPackages', JSON.stringify(arr));
+  //   console.log(arr);
+  //   // x1++;
+  //   // localStorage.setItem('x1', +x1);
+  //   // return;
+  // } else {
+  //   alert('Try To Add another Package');
+  //   return;
+  // }
+
+
+  let prodArr=JSON.parse(localStorage.getItem("prodArr"))||[];
+  let obj={
+    img:prod.oneimg,
+    title:prod.onet,
+    price:prod.onep,
+  }
+
+  prodArr.push(obj);
+  localStorage.setItem("prodArr",JSON.stringify(prodArr));
+}
+
+
+
+
+
+
+
+
+
 
 let h3_2to_store_LS = document.getElementById('h3_2to_store_LS');
 let price2_to_store_LS = document.getElementById('p2Price');
@@ -66,6 +94,9 @@ function press_cart3() {
     return;
   }
 }
+
+
+
 
 
 
