@@ -11,7 +11,9 @@ const navbar=()=>{
   </div>
   <div id="second">
     <div>
+
       <a href="/index.html"
+
         ><img
           id="icon"
           src="https://www.1mg.com/images/tata_1mg_logo.svg"
