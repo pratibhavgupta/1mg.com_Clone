@@ -11,7 +11,7 @@ const navbar=()=>{
   </div>
   <div id="second">
     <div>
-      <a href=""
+      <a href="/index.html"
         ><img
           id="icon"
           src="https://www.1mg.com/images/tata_1mg_logo.svg"
@@ -21,10 +21,10 @@ const navbar=()=>{
     <div id="sections">
       <a href=""><h4>MEDICINES</h4></a>
       <p>SAFE</p>
-      <a href=""><h4>LAB TESTS</h4> </a>
+      <a href="/Bashistha_Day2/Bashistha_Day2/project copy/Lab Tests/lab.html"><h4>LAB TESTS</h4> </a>
       <a href=""><h4>CONSULT DOCTORS</h4></a>
-      <a href=""> <h4>COVID-19</h4></a>
-      <a href=""><h4>AYURVEDA</h4></a>
+      <a href="/Bashistha_day4/covid.html"> <h4>COVID-19</h4></a>
+      <a href="/Bashistha_day5/content-slider-scroll-carousel/index.html"><h4>AYURVEDA</h4></a>
       <a href=""><h4>CARE PLAN</h4> </a>
       <p>SAVE MORE</p>
     </div>

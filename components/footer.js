@@ -132,7 +132,7 @@ const footer=()=>{
             /></a>
           </div>
           <p>Want daily dose of health?</p>
-          <a href="index.html">
+          <a href="signup.html">
             <button id="signbtn">SIGN UP</button>
           </a>
         </div>
