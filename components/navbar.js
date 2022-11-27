@@ -10,7 +10,7 @@ const navbar=()=>{
   </div>
   <div id="second">
     <div>
-      <a href="Header.html"
+      <a href="index.html"
         ><img
           id="icon"
           src="https://www.1mg.com/images/tata_1mg_logo.svg"
@@ -18,7 +18,7 @@ const navbar=()=>{
       /></a>
     </div>
     <div id="sections">
-      <a href="Header.html"><h4>MEDICINES</h4></a>
+      <a href="index.html"><h4>MEDICINES</h4></a>
       <p>SAFE</p>
       <a href="Bashistha_Day2/Bashistha_Day2/project copy/Lab Tests/lab.html"><h4>LAB TESTS</h4> </a>
       <a href="Bashistha_Day3/Consult Doctors/part1.html"><h4>CONSULT DOCTORS</h4></a>
@@ -31,7 +31,7 @@ const navbar=()=>{
       <div id="sign">
         <a href="login.html"><p>Login</p></a>
         <p> |</p>
-        <a href="index.html"><p>Sign Up</p></a>
+        <a href="signup.html"><p>Sign Up</p></a>
       </div>
       
       <div><a href=""><p>Offers</p></a></div>
